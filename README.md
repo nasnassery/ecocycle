@@ -1,7 +1,7 @@
 # EcoCycle – Recycling Awareness Website
 
 Web Programming (1501341) – University of Sharjah – Fall 2026/2027
-Student: Muhammad Allsultan (U23106004) – Individual Project
+Student:Riaz Nassery U23106778 Muhammad Allsultan U23106004
 
 ## Folder structure
 
