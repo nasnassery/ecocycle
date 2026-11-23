@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoCycle | Recycling Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="images/logo.svg" alt="EcoCycle logo">
+      <span>EcoCycle</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="types.html">Recycling Types</a>
+      <a href="calculator.html" class="active">Calculator</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Recycling Calculator</h1>
+    <p class="intro">Choose a material and enter its weight to see the estimated benefit of recycling it.</p>
+
+    <div class="form-box">
+      <label for="material">Material</label>
+      <select id="material">
+        <option value="">-- Choose a material --</option>
+        <option value="plastic">Plastic</option>
+        <option value="paper">Paper</option>
+        <option value="metal">Metal</option>
+        <option value="ewaste">Electronic Waste</option>
+      </select>
+
+      <label for="weight">Weight (kg)</label>
+      <input type="number" id="weight" placeholder="e.g. 5">
+
+      <button onclick="calculate()">Calculate</button>
+
+      <!-- JavaScript writes the result here -->
+      <p id="error" class="error"></p>
+      <div id="result" class="result"></div>
+    </div>
+
+    <p class="note">These numbers are rough estimates for awareness only.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 EcoCycle – Web Programming Project, University of Sharjah</p>
+  </footer>
+
+  <script src="js/calculator.js"></script>
+</body>
+</html>
